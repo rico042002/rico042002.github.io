@@ -5,20 +5,20 @@ body {
 }
 
 h1 {
-	color: white;
+	color: black;
 	font-size: 50px;
 	font-weight: normal;
 	margin-bottom: 0;
 }
 
 h2 {
-	color: white;
+	color: black;
 	font-size: 18px;
 	margin-top: 0;
 }
 
 .bio {
-	color: white;
+	color: black;
 	font-size: 14px;
 }
 
@@ -39,7 +39,7 @@ h2 {
 
 .grey{
 	height: 3px;
-	background-color: DarkBlue;
+	background-color: black;
 	border: none;
 	width: 50px;
 }
@@ -47,6 +47,153 @@ h2 {
 .about-container {
    background: url('../images/wp2.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  padding-top: 5px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 100px;
+}
+
+.blue {
+	border-top: 1px solid black;
+	border-bottom: none;
+	border-right: none;
+	width: 250px;
+}
+
+.box {
+	float: left;
+	
+	width: 42.5%;
+	margin-left: 5%;
+	margin-top: 80px;
+}
+
+.clear {
+	clear: both;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+
+p {
+	text-align: center;
+}
+
+.skills {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.icons {
+	text-align: center;
+}
+
+.icon {
+	margin: 30px 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.contact-me {
+	height: 350px;
+	background-color: #202020;
+	padding-top: 30px; 
+}
+
+.contact-headline {
+	color: white;
+}
+
+.contact-info {
+	color: white;
+	font-size: 13px;
+	margin-top: 30px;
+}
+
+.contact-link {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+
+}
+
+div ul li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-left: 30px;
+}
+
+.hire-me {
+	border-style: solid;
+	border-color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+a {
+  text-decoration: none;
+  color:white;
+  background:rgba(0,0,0,0.05);
+  border-radius: 20px
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom:2px solid white;
+  position: absolute;
+  top:0;
+  background:black;
+  left:0;
+  z-index: -1;
+  border-radius:20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin:100px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding:5px;
+  margin:0 20px;
+  color:black;
+}
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
