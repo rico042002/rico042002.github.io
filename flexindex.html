@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/flex.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<div class="panels">
+	<div class="panel panel1">
+	<p>Son</p>
+	<p>Goku</p>
+    <p><font color="blue">悟空</font></p>
+	</div>
+<div class="panel panel3">
+	<p><font color="yellow">ナルト</font></p>
+	<p>Naruto</p>
+  <p>Uzumaki</p>
+	</div>
+	<div class="panel panel4">
+    <p><font color="orange">イチゴ</font></p>
+	<p>Ichigo</p>
+	<p>Kurosaki</p>
+	</div>
+	<div class="panel panel5">
+    <p>Monkey D.</p>
+	<p>Luffy</p>
+    <p><font color="red">ルフィ</font></p>
+	</div>
+<script type="text/javascript">
+	const panels = document.querySelectorAll('.panel');
+
+		function toggleOpen() {
+			this.classList.toggle('open')
+		}
+
+		function toggleActive(e) {
+			if(e.propertyName.includes('flex')) {
+			this.classList.toggle('open-active')
+			}
+		}
+
+		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+		panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+</script>
+</body>
+</html>

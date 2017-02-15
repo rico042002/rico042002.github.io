@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="styles/todo.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <script src="https://use.fontawesome.com/83a2a315f3.js"></script>
+  </head>
+
+  <body>
+    <h1>To Do List</h1>
+    
+    <div>
+    <button class="myButton" onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <br>
+    <div>
+      <button class="myButton" onclick="handlers.addTodo()">Add</button>
+      <input id="addTodoText" type="text">
+     </div>
+     <br>
+     <div>
+       <button class="myButton" onclick="handlers.changeTodo()">Change Todo</button>
+         <input id="changeTodoPositionInput" type="number">
+         <input id="changeTodoTextInput" type="text">
+     </div>
+      <br>
+     <div>
+       <button class="myButton" onclick="handlers.toggleCompleted()">Toggle Completed</button>
+       <input id="toggleCompletedPositionInput" type="number">
+     </div>
+     
+     <ul>
+      
+     </ul>
+  
+  <script type="text/javascript" src="scripts/todo.js"></script>
+  </body>
+
+</html>
