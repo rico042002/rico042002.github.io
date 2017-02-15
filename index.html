@@ -92,7 +92,7 @@ fizzBuzz();
 
 <div class="box"><pre><code class="language-javascript">
 /* Recursion is a function that calls itself until 
-it no longer doesnt */
+it no longer doesn't */
 
 let countDownFrom = (num) => {
     if (num === 0) return;
@@ -132,31 +132,30 @@ countDownFrom(10);
   <h4>Twitch TV API</h4>
   <a href="http://codepen.io/rico042002/full/jyGeOJ/"><img src="images/s2VnNR.jpg" class="full-width" /></a>
   <p>
-    An API based project. You can view Free Code Camp users who are currently streaming and information from the online activity of FCC.
+    An API-based project. You can view Free Code Camp users who are currently streaming and information from the online activity of FCC.
   </p>
 </div>
 <div class="box">
   <h4>JavaScript Drumpad</h4>
   <a href="drumindex.html"><img src="images/EtVocz.jpg" class="full-width" /></a>
   <p>
-    A drumpad built completely from JavaScript as a part of Wes Bos JavaScript 30 course. Press keys to make a beat! 
+   A drum pad built completely from JavaScript as a part of Wes Bos JavaScript 30 course. Press keys to make a beat! 
   </p>
 </div>
 <br class="clear" />
 <div class="box">
   <h4>Single Page Todo Application</h4>
   <a href="todoindex.html"><img src="images/1F0zUj.jpg" class="full-width" /></a>
-  <p>
-    This single-page to-do application features a
+  <p>This single-page to-do application features a
     fluid user interface that– by using JavaScript–
-    allows users to rapidly add dynamic content. 0 based index counting, built from the course "Practical JavaScript" by Ghordon Zhu
+    allows users to rapidly add dynamic content. 0 based index counting, built from the course "Practical JavaScript" by Gordon Zhu
   </p>
 </div>
 <div class="box">
   <h4>Anime Flex gallery</h4>
   <a href="flexindex.html"><img src="images/7Js4v6.jpg" class="full-width" /></a>
   <p>
-    Another JavaScript 30 build from Wes Bos involving animation flex box usage. 
+   Another JavaScript 30 build from Wes Bos involving animation flex box usage.
   </p>
 </div>
 <br class="clear" />
@@ -185,5 +184,28 @@ languages and gained comfort with the following tools &amp; technologies.</p>
 
 	<p><a href="mailto:rico042002@gmail.com" class="contact-link">Rico042002@gmail.com</a></p>
 </div>
+<script>
+    const triggers = document.querySelectorAll('a');
+    const highlight = document.createElement('span');
+    highlight.classList.add('highlight');
+    document.body.append(highlight);
+
+    function highlightLink() {
+      const linkCoords = this.getBoundingClientRect();
+      console.log(linkCoords);
+      const coords = {
+        width: linkCoords.width,
+        height: linkCoords.height,
+        top: linkCoords.top + window.scrollY,
+        left: linkCoords.left + window.scrollX
+      };
+
+      highlight.style.width = `${coords.width}px`;
+      highlight.style.height = `${coords.height}px`;
+      highlight.style.transform = `translate(${coords.left}px, ${coords.top}px`;
+    }
+
+    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+  </script>
 </body>
 </html>
