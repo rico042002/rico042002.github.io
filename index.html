@@ -1,35 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
- 	<link href='styles/test.css' rel='stylesheet' type='text/css'>
-  
-  </head>
-  <body>
-    <h1>Mozilla Is Cool</h1>
-	<img src="images/firefox-icon.png" alt="images/firefox-icon.png">
-    <p>At Mozilla, we’re a global community of</p>
-    
-<ul> 
-  <li>technologists</li>
-  <li>thinkers</li>
-  <li>builders</li>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="styles/style1.css">
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/prism-atom-dark.css" media="screen"/>
+<script type="text/javascript" src="styles/prism.js"></script>
+<script type="text/javascript" src="styles/prism.ruby.js"></script>
+
+</head>
+<body>
+
+<div class="about-container">
+
+<ul>
+	<li><a href="#" class="">About</a></li>
+	<li><a href="#code-samples" class="">Code Samples</a></li>
+	<li><a href="#web-apps" class="">Web Apps</a></li>
+	<li><a href="#skills-tools" class="">Skills &amp; Tools</a></li>
+	<li class="hire-me"><a href="#hire" class="">Hire Me</a></li>
 </ul>
+	
+<div class="about">
+<img src="images/me.jpg" class="me"/>
 
-<p>working together to keep the Internet alive and 
-accessible, so people worldwide can be informed 
-contributors and creators of the Web. We believe this 
-act of human collaboration across an open platform is 
-essential to individual growth and our collective 
-future.</p>
+<h1>Rico Miller</h1>
+<h2>Learning Web Developer</h2>
 
-<p>Read the <a 
-href="https://www.mozilla.org/en-US/about/manifesto/" 
-target="_blank">Mozilla Manifesto</a> to learn even more about the 
-values and principles that guide the pursuit of our 
-mission.</p> 
- <script src='scripts/main.js'></script>
+<hr class="grey"/>
 
-  </body>
+<p class="bio">
+	Welcome to my first professional portfolio. This page was crafted as an assignment for Fire Hose Project bootcamp prep course. I'm 30 years old, located in the Bryan College Station area, went to Blinn for Computer Science in 2007, started playing with coding in 2013, chose it as a career July 2016. I am efficent in HTML, CSS and trying to gain a knowledgeble level of JavaScript. Below are a couple of web application's and websites I've created.
+</div>
+</div>
+
+
+	<h3 id="code-samples">Code Snippets</h3>
+	<hr class="blue">
+
+<div class="box">
+	<h4>Temperature Conversion</h4>
+	<p>JavaScript Code will prompt the user for temperature
+	in degrees Celsius and convert to Fahrenheit</p>
+</div>
+
+<div class="box"><pre><code class="language-javascript">function convertToF(celsius) {
+  let fahrenheit;
+ 
+  let fahrenheit = (celsius * (9/5)) + 32;
+  
+  return fahrenheit;
+}
+
+convertToF(45);
+</code></pre>
+</div>
+
+<br class="clear"/>
+
+<div class="box">
+	<h4>FizzBuzz</h4>
+	<p>Solution to the dreaded Fizz Buzz algorithm</p>
+</div>
+
+<div class="box"><pre><code class="language-javascript">
+function fizzBuzz() {
+for (var i = 0; i <= 100; i++) {
+switch (true) {
+	case i % 3 === 0 && i % 5 === 0:
+		console.log("FizzBuzz");
+		break;
+	case i % 3 === 0:
+		console.log("Fizz");
+	break;
+	case i % 5 === 0:
+		console.log("Buzz");
+		}
+	}
+}
+fizzBuzz();
+</code></pre>
+	
+</div>
+
+<br class="clear"/>
+
+<div class="box">
+	<h4>What is Recursion?</h4>
+	<p>Example of a simple Recursive Function</p>
+</div>
+
+<div class="box"><pre><code class="language-javascript">
+/* Recursion is a function that calls itself until 
+it no longer doesnt */
+
+let countDownFrom = (num) => {
+    if (num === 0) return;
+	console.log(num);
+	countDownFrom(num - 1);
+};
+
+countDownFrom(10);
+
+
+</code></pre>
+</div>
+
+<br class="clear"/>
+
+<h3 id="web-apps">Web Apps</h3>
+<hr class="blue">
+
+<div class="box">
+	<h4>Quote Generator</h4>
+	<a href="http://codepen.io/rico042002/full/PWPgRa/"><img src="images/WJtCkY.jpg" class="full-width"></a>
+	<p>A JSON-powered quote generator with a mobile-first
+    design, using HTML, and CSS.
+  </p>
+</div>
+
+<div class="box">
+  <h4>Wikipedia Clone</h4>
+  <a href="http://codepen.io/rico042002/full/PWjKZR/"><img src="images/SrWNVX.jpg" class="full-width" /></a>
+  <p>
+    A Wiki clone that allows you to search a random article by clicking the main icon and dynamically search Wikipedia.
+  </p>
+</div>
+<br class="clear" />
+
+<div class="box">
+  <h4>Twitch TV API</h4>
+  <a href="http://codepen.io/rico042002/full/jyGeOJ/"><img src="images/s2VnNR.jpg" class="full-width" /></a>
+  <p>
+    An API based project. You can view Free Code Camp users who are currently streaming and information from the online activity of FCC.
+  </p>
+</div>
+<div class="box">
+  <h4>JavaScript Drumpad</h4>
+  <a href="drumindex.html"><img src="images/EtVocz.jpg" class="full-width" /></a>
+  <p>
+    A drumpad built completely from JavaScript as a part of Wes Bos JavaScript 30 course. Press keys to make a beat! 
+  </p>
+</div>
+<br class="clear" />
+<div class="box">
+  <h4>Single Page Todo Application</h4>
+  <a href="todoindex.html"><img src="images/1F0zUj.jpg" class="full-width" /></a>
+  <p>
+    This single-page to-do application features a
+    fluid user interface that– by using JavaScript–
+    allows users to rapidly add dynamic content. 0 based index counting, built from the course "Practical JavaScript" by Ghordon Zhu
+  </p>
+</div>
+<div class="box">
+  <h4>Anime Flex gallery</h4>
+  <a href="flexindex.html"><img src="images/7Js4v6.jpg" class="full-width" /></a>
+  <p>
+    Another JavaScript 30 build from Wes Bos involving animation flex box usage. 
+  </p>
+</div>
+<br class="clear" />
+
+
+<h3 id="skills-tools">Skills &amp; Tools</h3>
+<hr class="grey"/>
+<p class="skills">I will gain expertise in the following programming
+languages and gained comfort with the following tools &amp; technologies.</p>
+
+<div class="icons">
+<img src="images/github.png" class="icon" />
+<img src="images/AngularJS.png" class="icon" /> 
+<img src="images/html-css-js-logos1.png" class="icon" />
+<img src="images/node2.png" class="icon" />
+<img src="images/react3.png" class="icon" />
+
+<br class="clear">
+</div>
+	
+<div class="contact-me">
+	<h3 class="contact-headline" id="hire">Contact</h3>
+	<hr class="blue"/>
+	<p class="contact-info">Learning Web Developer. Searching for work opportunities. Please contact me:
+	</p>
+
+	<p><a href="mailto:rico042002@gmail.com" class="contact-link">Rico042002@gmail.com</a></p>
+</div>
+</body>
 </html>

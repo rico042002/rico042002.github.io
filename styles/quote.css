@@ -1,0 +1,67 @@
+body { 
+  background: url(https://s5.postimg.org/xz3p4cnuf/y_Dd_A9b_K_Imgur.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.fontCh {
+  font-size: 34px;
+  color: #FFD700;
+}
+
+.hdText {
+  color: hsl(34, 100%, 54%);
+}
+
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd900), color-stop(1, #ffc400));
+	background:-moz-linear-gradient(top, #ffd900 5%, #ffc400 100%);
+	background:-webkit-linear-gradient(top, #ffd900 5%, #ffc400 100%);
+	background:-o-linear-gradient(top, #ffd900 5%, #ffc400 100%);
+	background:-ms-linear-gradient(top, #ffd900 5%, #ffc400 100%);
+	background:linear-gradient(to bottom, #ffd900 5%, #ffc400 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd900', endColorstr='#ffc400',GradientType=0);
+	background-color:#ffd900;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #eeaf11;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	  font-family: 'Kaushan Script', cursive;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 19px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc400), color-stop(1, #ffd900));
+	background:-moz-linear-gradient(top, #ffc400 5%, #ffd900 100%);
+	background:-webkit-linear-gradient(top, #ffc400 5%, #ffd900 100%);
+	background:-o-linear-gradient(top, #ffc400 5%, #ffd900 100%);
+	background:-ms-linear-gradient(top, #ffc400 5%, #ffd900 100%);
+	background:linear-gradient(to bottom, #ffc400 5%, #ffd900 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc400', endColorstr='#ffd900',GradientType=0);
+	background-color:#ffc400;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
